@@ -1,0 +1,18 @@
+{
+  "name": "qa-bot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Riku Rouvila <riku.rouvila@gmail.com>",
+  "description": "Simple Q&A bot",
+  "dependencies": {
+    "hubot-irc": "~0.2.7",
+    "hubot": "~2.10.0",
+    "firebase": "~2.0.6"
+  },
+  "scripts": {
+    "start": "bin/hubot -a irc -n Hubot"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

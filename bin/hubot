@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+npm install
+
+export HUBOT_IRC_SERVER="irc.quakenet.org"
+export HUBOT_IRC_ROOMS="#riku"
+export HUBOT_IRC_NICK="qabot"
+export HUBOT_IRC_UNFLOOD="true"
+
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+
+exec node_modules/.bin/hubot "$@"
